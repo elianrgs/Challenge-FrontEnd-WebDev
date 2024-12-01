@@ -1,5 +1,4 @@
 # Challenge-FrontEnd-WebDev
-# App Saúde Infantil
 
 ## CP2 - Front-End Design  
 **Projeto de personalização com propriedades de CSS e funcionalidades em JavaScript para o site do App Saúde Infantil**  
