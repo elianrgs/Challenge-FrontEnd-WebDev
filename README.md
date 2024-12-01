@@ -1,6 +1,5 @@
 # Challenge-FrontEnd-WebDev
 
-## CP2 - Front-End Design  
 **Projeto de personalização com propriedades de CSS e funcionalidades em JavaScript para o site do App Saúde Infantil**  
 **Turma:** 1ESPR - Engenharia de Software  
 
