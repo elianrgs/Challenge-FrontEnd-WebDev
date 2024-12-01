@@ -1,0 +1,142 @@
+/* Reseta e configurações básicas */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: white;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Estilos do Cabeçalho */
+header {
+    background-color: #007bff;
+    color: white;
+    padding: 1.5rem 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+header .logo {
+    max-width: 150px;
+    margin-bottom: 1rem;
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+header nav ul li {
+    list-style: none;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+/* Estilo para o link ativo */
+nav ul li a.ativo {
+    border-bottom: 2px solid white;
+    padding-bottom: 2px;
+}
+
+/* Seção de Introdução */
+.intro {
+    background-color: white;
+    padding: 3rem 0;
+    text-align: center;
+}
+
+.intro h2 {
+    font-size: 2rem;
+    color: #007bff;
+}
+
+.intro p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 2rem;
+}
+
+/* Estilos da seção de Impactos */
+#impactos-detalhes {
+    margin-top: 40px;
+    padding: 2rem 0;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.impactos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.impacto {
+    background-color: #ffffff;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    min-width: 280px;
+    max-width: 400px;
+    text-align: left;
+}
+
+.impacto h3 {
+    font-size: 1.8rem;
+    color: #007bff;
+    margin-bottom: 1rem;
+}
+
+.impacto ul {
+    list-style: disc;
+    padding-left: 1.5rem;
+    color: #333;
+    line-height: 1.5;
+}
+
+.impacto ul li {
+    margin-bottom: 10px;
+}
+
+.impacto:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Estilos do Rodapé */
+footer {
+    background-color: #007bff;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+    margin-top: 2rem;
+}

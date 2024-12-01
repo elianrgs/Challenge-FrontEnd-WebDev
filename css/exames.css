@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f0f8ff;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #007bff;
+    color: white;
+    padding: 1.5rem 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header .logo {
+    margin-bottom: 1rem;
+}
+
+header .logo-img {
+    width: 80px;
+    height: auto;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    list-style: none;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.exames {
+    background-color: #ffffff;
+    padding: 3rem 0;
+}
+
+.exames h2 {
+    font-size: 2.5rem;
+    color: #007bff;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/* Box Exame */
+.exame {
+    background-color: #f9f9f9;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    opacity: 0; /* Inicialmente invisível */
+    transform: translateY(50px); /* Inicialmente movido para baixo */
+    animation: slideInUp 0.8s forwards; /* Animação de "subida" */
+}
+
+/* Definição da animação */
+@keyframes slideInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px); /* Começa fora da tela, abaixo */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0); /* Chega na posição original */
+    }
+}
+
+.exame h3 {
+    font-size: 1.8rem;
+    color: #007bff;
+    margin-bottom: 0.5rem;
+}
+
+.exame p {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.btn-download {
+    background-color: #007bff;
+    color: white;
+    font-size: 1.2rem;
+    padding: 0.8rem 1.5rem;
+    text-decoration: none;
+    border-radius: 8px;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.btn-download:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    background-color: #007bff;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+}

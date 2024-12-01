@@ -1,0 +1,132 @@
+/* Resetando margens e padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f5f5f5;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Estilo do cabeçalho */
+header {
+    background-color: #007bff;
+    color: white;
+    padding: 1.5rem 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Logo do Sabará */
+header .logo {
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+header .logo img {
+    height: 70px; /* Ajuste conforme o tamanho da logo */
+}
+
+/* Título principal */
+header h1 {
+    font-size: 2.5rem;
+}
+
+/* Menu de Navegação */
+header nav ul {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+header nav ul li {
+    list-style: none;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+header nav ul li a:hover {
+    color: #ffcc00; /* Mudança de cor ao passar o mouse */
+}
+
+/* Seção principal do Dashboard */
+.dashboard {
+    background-color: #ffffff;
+    padding: 3rem 0;
+}
+
+.dashboard h2 {
+    font-size: 2rem;
+    color: #007bff;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.dashboard .perfil, .dashboard .informacoes, .dashboard .proximos-exames, .dashboard .medicos-responsaveis,
+.dashboard .evolucao, .dashboard .notificacoes, .dashboard .plano-tratamento {
+    background-color: #f0f8ff;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;  
+}
+
+.dashboard .perfil h2 {
+    color: #007bff;
+}
+
+h3 {
+    color: #007bff;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+ul li {
+    margin: 0.5rem 0;
+}
+
+.dashboard .perfil:hover,
+.dashboard .informacoes:hover,
+.dashboard .proximos-exames:hover,
+.dashboard .medicos-responsaveis:hover,
+.dashboard .evolucao:hover,
+.dashboard .notificacoes:hover,
+.dashboard .plano-tratamento:hover {
+    transform: translateY(-10px); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);  
+}
+
+/* Rodapé */
+footer {
+    background-color: #007bff;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+    margin-top: 2rem;
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - App Saúde Infantil</title>
+    <link rel="stylesheet" href="./css/contato.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo-container">
+                <!-- Logo do App Saúde Infantil -->
+                <img src="./img/sabara.png" alt="Logo do App Saúde Infantil" class="logo">
+            </div>
+            <h1>Contato - Saúde Infantil</h1>
+            <nav>
+                <ul>
+                    <li><a href="./index.html">Sobre</a></li>
+                    <li><a href="./dash.html">Dashboards</a></li>
+                    <li><a href="./exames.html">Meus Exames</a></li>
+                    <li><a href="./agendamentos.html">Agendamentos</a></li>
+                    <li><a href="./adicionar.html">Tarefas</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="informacoes">
+            <div class="container">
+                <h2>Informações de Contato</h2>
+                <div class="endereco">
+                    <h3>Endereço</h3>
+                    <p>Hospital Sabará - Avenida Angélica 1987, Consolação, São Paulo</p>
+                </div>
+                <div class="telefone">
+                    <h3>Telefone</h3>
+                    <p>(11) 3155-2800</p>
+                </div>
+                <div class="cep">
+                    <h3>CEP</h3>
+                    <p>01227-200</p>
+                </div>
+                <div class="horario">
+                    <h3>Horário com Menos Pacientes</h3>
+                    <p>De segunda a sexta-feira, das 14:00 às 16:00 horas.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="formulario-contato">
+            <div class="container">
+                <h2>Envie uma Mensagem</h2>
+                <form action="#" method="POST">
+                    <div class="campo">
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+                    </div>
+
+                    <div class="campo">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="Seu email" required>
+                    </div>
+
+                    <div class="campo">
+                        <label for="mensagem">Mensagem:</label>
+                        <textarea id="mensagem" name="mensagem" rows="5" placeholder="Digite sua mensagem" required></textarea>
+                    </div>
+
+                    <div class="campo">
+                        <button type="submit">Enviar Mensagem</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 App Saúde Infantil - Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>

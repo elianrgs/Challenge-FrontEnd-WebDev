@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - App Saúde Infantil</title>
+    <link rel="stylesheet" href="./css/login.css">
+    <script>
+        function validarLogin(event) {
+            event.preventDefault();
+            
+            const email = document.getElementById("email").value;
+            const senha = document.getElementById("senha").value;
+            
+
+            if (email === "123" && senha === "123") {
+
+                window.location.href = "index.html"; 
+            } else {
+
+                document.getElementById("erro-mensagem").style.display = "block";
+            }
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="./img/sabara.png" alt="Logo Saúde Infantil" class="logo-img">
+            </div>
+            <h1>Saúde Infantil</h1>
+        </div>
+    </header>
+
+
+    <section class="login">
+        <div class="login-box"> 
+            <h2>Login</h2>
+            <form action="#" method="POST" onsubmit="validarLogin(event)">
+                <div class="campo">
+                    <label for="email">Email:</label>
+                    <input type="text" id="email" name="email" placeholder="Digite seu email" required>
+                </div>
+            
+                <div class="campo">
+                    <label for="senha">Senha:</label>
+                    <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required>
+                </div>
+            
+                <div class="campo">
+                    <button type="submit">Entrar</button>
+                </div>
+            
+
+                <div id="erro-mensagem" style="color: red; display: none;">
+                    <p>Email ou senha incorretos. Tente novamente!</p>
+                </div>
+            
+                <div class="esqueci-senha">
+                    <a href="#">Esqueci minha senha</a>
+                </div>
+            </form>
+            
+
+            <div class="nao-cadastrado">
+                <p>Ainda não tem cadastro? <a href="./cadastro.html">Clique aqui para se cadastrar</a></p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 App Saúde Infantil - Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>

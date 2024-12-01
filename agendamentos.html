@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendamentos - App Saúde Infantil</title>
+    <link rel="stylesheet" href="./css/agendamentos.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <!-- Logo na parte superior -->
+            <img src="./img/sabara.png" alt="Logo do App Saúde Infantil" class="logo">
+        </div>
+        <h1>Agendamentos</h1>
+        <div class="gerenciador">
+            <nav>
+                <ul>
+                    <li><a href="./index.html">Sobre</a></li>
+                    <li><a href="./dash.html">Dashboards</a></li>
+                    <li><a href="./exames.html">Meus Exames</a></li>
+                    <li><a href="./contato.html">Contato</a></li>
+                    <li><a href="./adicionar.html">Tarefas</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="agendamentos">
+            <h2>Próximas Consultas</h2>
+
+            <!-- Lista de Agendamentos -->
+            <div class="agendamento-list">
+                <div class="agendamento-item">
+                    <div class="info">
+                        <p><strong>Data:</strong> 15/12/2024</p>
+                        <p><strong>Hora:</strong> 14:00</p>
+                        <p><strong>Especialidade:</strong> Pediatria</p>
+                        <p><strong>Paciente:</strong> João Silva</p>
+                    </div>
+                    <div class="status">
+                        <p>Status: <span class="confirmada">Confirmada</span></p>
+                    </div>
+                </div>
+
+                <div class="agendamento-item">
+                    <div class="info">
+                        <p><strong>Data:</strong> 20/12/2024</p>
+                        <p><strong>Hora:</strong> 10:30</p>
+                        <p><strong>Especialidade:</strong> Oftalmologia</p>
+                        <p><strong>Paciente:</strong> Maria Oliveira</p>
+                    </div>
+                    <div class="status">
+                        <p>Status: <span class="pendente">Pendente</span></p>
+                    </div>
+                </div>
+                
+                <div class="agendamento-item">
+                    <div class="info">
+                        <p><strong>Data:</strong> 25/12/2024</p>
+                        <p><strong>Hora:</strong> 16:00</p>
+                        <p><strong>Especialidade:</strong> Dermatologia</p>
+                        <p><strong>Paciente:</strong> Carlos Souza</p>
+                    </div>
+                    <div class="status">
+                        <p>Status: <span class="confirmada">Confirmada</span></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="add-agendamento">
+                <a href="novo-agendamento.html" class="btn-adicionar">Adicionar Novo Agendamento</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 App Saúde Infantil - Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
